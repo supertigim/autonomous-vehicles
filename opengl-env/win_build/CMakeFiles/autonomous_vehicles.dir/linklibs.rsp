@@ -1,0 +1,1 @@
+ -LC:/Work/autonomous-vehicles/opengl-env/external/zeromq -lglu32 -lopengl32 external/glfw-3.1.2/src/libglfw3.a external/libGLEW_1130.a -lboost_filesystem -lboost_system -lboost_thread -lws2_32 -lzmq -lglu32 -lopengl32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
