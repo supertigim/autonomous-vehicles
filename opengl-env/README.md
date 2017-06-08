@@ -35,7 +35,7 @@ Please make sure that the instruction below is **ONLY tested in Win7 64bits**.
 
 **1. MinGW + Boost**  
 
-Instead of using vistual studio as a compiler, I had to choose this, because I wanted to minimize effort to build on Windows, and I found really nice package with no installation from [nuwen.net](https://nuwen.net/mingw.html) where MingGW, boost and git are provided together with no installation. Just unzip and use it with the batch file named **"open____distro____window.bat"** to launch terminal to build this application.  
+Instead of using visual studio as a compiler, I had to choose this, because I wanted to minimize effort to build on Windows, and I found really nice package with no installation from [nuwen.net](https://nuwen.net/mingw.html) where MingGW, boost and git are provided together with no installation. Just unzip and use it with the batch file named **"open__distro__window.bat"** to launch terminal to build this application.  
 
 - Download and click **mingw-15.0.exe** from the site  
 - Move the unzipped folder named "MinGW" to c:\  
@@ -62,7 +62,9 @@ You can find an installation file from [CMake site](https://cmake.org/download/)
 	./autonomous_vehicle 10			<- upto 22 vehicles
   
 ### Windows  
-
+  
+You can easily build this with **win_build** directory that I made. However, you need to follow the instruction, **"Building on Windows"** in the [opengl tutorial site](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-1-opening-a-window/), if you want to change.   
+  
 	cd win_build
 	make 
 	autonomous_vehicles.exe 10  
@@ -75,25 +77,25 @@ You can find an installation file from [CMake site](https://cmake.org/download/)
 	
 	# main files 
 	- CMakeLists.txt		: cmake file  
-	- main.cpp				: entry function 
+	- main.cpp			: entry function 
 	- AIVehicle.h			: AI Vehicle class
 	- AIVehicle.cpp			: implementation of AI Vehicle
-	- SelfDrivingWorld.h	: world where vehicles are driving
-	- SelfDrivingWorld.cpp	: implementation of World
-	- DNN_TCP.h				: DNN over TCP class
+	- SelfDrivingWorld.h		: world where vehicles are driving
+	- SelfDrivingWorld.cpp		: implementation of World
+	- DNN_TCP.h			: DNN over TCP class
 	- DNN_TCP.cpp			: implementation using boost/asio  
-	- DNN_MQ.h				: DNN over Message Queue class
+	- DNN_MQ.h			: DNN over Message Queue class
 	- DNN_MQ.cpp			: implementation using ZeroMQ 
 
 	# from https://github.com/jmhong-simulation/2016FallCSE2022/tree/master/Week13/CarDriving2D_Labversion  
-	- Physics.h				: collision check class  
-	- Object.h				: OpenGL Object class 
+	- Physics.h			: collision check class  
+	- Object.h			: OpenGL Object class 
 	- Object.cpp			: implementation of Object class 
-	- LineObj.h				: line class inherited from Object class
+	- LineObj.h			: line class inherited from Object class
 	- SquareObj.h			: squre object class inherited from Object class
 	- SquareObj.cpp			: implementation of square object  
-	- Scene.h				: scene class for drawing world
-	- Scene.cpp				: implementation of scene class 
+	- Scene.h			: scene class for drawing world
+	- Scene.cpp			: implementation of scene class 
 
 	# from OpenGL Turorial  
 	- shader.hpp		

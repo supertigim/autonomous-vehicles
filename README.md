@@ -1,13 +1,13 @@
 ## Introduction  
 
-This is the project to see if Reinforcement Learning algorithm can be used in Drone management system. Still, I am struggling to reach satisfied result, so I need further research more and more.  
+This is the project to see if **Reinforcement Learning** can be used in Drone management system.   
   
-**[Video](https://www.youtube.com/watch?v=pdkdsPV1m_I)** : There are 22 vehicles driving on the map. Although it runs so slowly, it definitely shows that they can make the rule to avoid collision with each other after only less 5 minutes training. :)  
+**[Video](https://www.youtube.com/watch?v=pdkdsPV1m_I)** : There are 22 vehicles driving on the world. Although the application runs so slowly, it definitely shows that they can make the rule to avoid collision with each other after only less 5 minutes training. :)  
 
 ## How to use  
   
-1. Run mq-server.py or tcp-server.py in dnn-core directory first
-2. Run autonomous_vehicle in opengl-env directroy
+1. Run **mq-server.py** or tcp-server.py in dnn-core directory first
+2. Run **autonomous_vehicle** in opengl-env directroy after build
 3. Push **"space bar"** if you want to train one vehicle, otherwise push **"a" key** to train **all**.  
 4. Push "a" or "space" to stop trainig mode again 
 
@@ -16,7 +16,7 @@ This is the project to see if Reinforcement Learning algorithm can be used in Dr
 1. Save and load a trained model   
 2. Convolutional Neural Network   
 3. Unity3D based environment(application)   
-4. Multi-Drone management system with dronekit and Qgroundcontrol 
+4. Multi-Drone management system with [dronekit](http://dronekit.io/) and [Qgroundcontrol](http://qgroundcontrol.com/) 
     
 ## Open source list  
   
