@@ -109,12 +109,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.8/Modules/Platform/WindowsPaths.cmake"
   "C:/Program Files/CMake/share/cmake-3.8/Modules/WriteBasicConfigVersionFile.cmake"
   "../CMakeLists.txt"
-  "CMakeFiles/3.8.1/CMakeCCompiler.cmake"
-  "CMakeFiles/3.8.1/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.8.1/CMakeRCCompiler.cmake"
-  "CMakeFiles/3.8.1/CMakeSystem.cmake"
-  "CMakeFiles/feature_tests.c"
-  "CMakeFiles/feature_tests.cxx"
   "../external/CMakeLists.txt"
   "../external/glfw-3.1.2/CMakeLists.txt"
   "../external/glfw-3.1.2/cmake_uninstall.cmake.in"
@@ -125,6 +119,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../external/glfw-3.1.2/src/glfw3Config.cmake.in"
   "../external/glfw-3.1.2/src/glfw_config.h.in"
   "../external/glfw-3.1.2/tests/CMakeLists.txt"
+  "CMakeFiles/3.8.1/CMakeCCompiler.cmake"
+  "CMakeFiles/3.8.1/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.8.1/CMakeRCCompiler.cmake"
+  "CMakeFiles/3.8.1/CMakeSystem.cmake"
+  "CMakeFiles/feature_tests.c"
+  "CMakeFiles/feature_tests.cxx"
   )
 
 # The corresponding makefile is:

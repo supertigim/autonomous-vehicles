@@ -29,7 +29,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Work/autonomous-vehicles/opengl-env/build_win/external/glfw-3.1.2/cmake_install.cmake")
+  include("C:/Work/autonomous-vehicles/opengl-env/win_build/external/glfw-3.1.2/cmake_install.cmake")
 
 endif()
 

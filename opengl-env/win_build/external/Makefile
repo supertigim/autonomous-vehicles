@@ -50,7 +50,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Work\autonomous-vehicles\opengl-env
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Work\autonomous-vehicles\opengl-env\build_win
+CMAKE_BINARY_DIR = C:\Work\autonomous-vehicles\opengl-env\win_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -125,14 +125,14 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(CMAKE_COMMAND) -E cmake_progress_start C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles C:\Work\autonomous-vehicles\opengl-env\build_win\external\CMakeFiles\progress.marks
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles 0
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles C:\Work\autonomous-vehicles\opengl-env\win_build\external\CMakeFiles\progress.marks
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/clean
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/clean
 .PHONY : clean
 
 # The main clean target
@@ -142,22 +142,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/preinstall
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/preinstall
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 external/CMakeFiles/GLEW_1130.dir/rule:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/CMakeFiles/GLEW_1130.dir/rule
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/CMakeFiles/GLEW_1130.dir/rule
 .PHONY : external/CMakeFiles/GLEW_1130.dir/rule
 
 # Convenience name for target.
@@ -167,7 +167,7 @@ GLEW_1130: external/CMakeFiles/GLEW_1130.dir/rule
 
 # fast build rule for target.
 GLEW_1130/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\CMakeFiles\GLEW_1130.dir\build.make external/CMakeFiles/GLEW_1130.dir/build
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\CMakeFiles\GLEW_1130.dir\build.make external/CMakeFiles/GLEW_1130.dir/build
 .PHONY : GLEW_1130/fast
 
 glew-1.13.0/src/glew.obj: glew-1.13.0/src/glew.c.obj
@@ -176,7 +176,7 @@ glew-1.13.0/src/glew.obj: glew-1.13.0/src/glew.c.obj
 
 # target to build an object file
 glew-1.13.0/src/glew.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\CMakeFiles\GLEW_1130.dir\build.make external/CMakeFiles/GLEW_1130.dir/glew-1.13.0/src/glew.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\CMakeFiles\GLEW_1130.dir\build.make external/CMakeFiles/GLEW_1130.dir/glew-1.13.0/src/glew.c.obj
 .PHONY : glew-1.13.0/src/glew.c.obj
 
 glew-1.13.0/src/glew.i: glew-1.13.0/src/glew.c.i
@@ -185,7 +185,7 @@ glew-1.13.0/src/glew.i: glew-1.13.0/src/glew.c.i
 
 # target to preprocess a source file
 glew-1.13.0/src/glew.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\CMakeFiles\GLEW_1130.dir\build.make external/CMakeFiles/GLEW_1130.dir/glew-1.13.0/src/glew.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\CMakeFiles\GLEW_1130.dir\build.make external/CMakeFiles/GLEW_1130.dir/glew-1.13.0/src/glew.c.i
 .PHONY : glew-1.13.0/src/glew.c.i
 
 glew-1.13.0/src/glew.s: glew-1.13.0/src/glew.c.s
@@ -194,7 +194,7 @@ glew-1.13.0/src/glew.s: glew-1.13.0/src/glew.c.s
 
 # target to generate assembly for a file
 glew-1.13.0/src/glew.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\CMakeFiles\GLEW_1130.dir\build.make external/CMakeFiles/GLEW_1130.dir/glew-1.13.0/src/glew.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\CMakeFiles\GLEW_1130.dir\build.make external/CMakeFiles/GLEW_1130.dir/glew-1.13.0/src/glew.c.s
 .PHONY : glew-1.13.0/src/glew.c.s
 
 # Help Target
@@ -224,6 +224,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

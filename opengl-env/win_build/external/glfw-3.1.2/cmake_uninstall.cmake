@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "C:/Work/autonomous-vehicles/opengl-env/build_win/external/glfw-3.1.2/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: \"C:/Work/autonomous-vehicles/opengl-env/build_win/external/glfw-3.1.2/install_manifest.txt\"")
+if (NOT EXISTS "C:/Work/autonomous-vehicles/opengl-env/win_build/external/glfw-3.1.2/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: \"C:/Work/autonomous-vehicles/opengl-env/win_build/external/glfw-3.1.2/install_manifest.txt\"")
 endif()
 
-file(READ "C:/Work/autonomous-vehicles/opengl-env/build_win/external/glfw-3.1.2/install_manifest.txt" files)
+file(READ "C:/Work/autonomous-vehicles/opengl-env/win_build/external/glfw-3.1.2/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

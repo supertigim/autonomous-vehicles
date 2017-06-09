@@ -50,7 +50,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Work\autonomous-vehicles\opengl-env
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Work\autonomous-vehicles\opengl-env\build_win
+CMAKE_BINARY_DIR = C:\Work\autonomous-vehicles\opengl-env\win_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -125,9 +125,9 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target

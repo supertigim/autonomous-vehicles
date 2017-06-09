@@ -45,7 +45,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Work\autonomous-vehicles\opengl-env
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Work\autonomous-vehicles\opengl-env\build_win
+CMAKE_BINARY_DIR = C:\Work\autonomous-vehicles\opengl-env\win_build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/autonomous_vehicles.dir/depend.make
@@ -59,7 +59,7 @@ include CMakeFiles/autonomous_vehicles.dir/flags.make
 CMakeFiles/autonomous_vehicles.dir/shader.cpp.obj: CMakeFiles/autonomous_vehicles.dir/flags.make
 CMakeFiles/autonomous_vehicles.dir/shader.cpp.obj: CMakeFiles/autonomous_vehicles.dir/includes_CXX.rsp
 CMakeFiles/autonomous_vehicles.dir/shader.cpp.obj: ../shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/autonomous_vehicles.dir/shader.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/autonomous_vehicles.dir/shader.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\autonomous_vehicles.dir\shader.cpp.obj -c C:\Work\autonomous-vehicles\opengl-env\shader.cpp
 
 CMakeFiles/autonomous_vehicles.dir/shader.cpp.i: cmake_force
@@ -84,7 +84,7 @@ CMakeFiles/autonomous_vehicles.dir/shader.cpp.obj.provides.build: CMakeFiles/aut
 CMakeFiles/autonomous_vehicles.dir/Object.cpp.obj: CMakeFiles/autonomous_vehicles.dir/flags.make
 CMakeFiles/autonomous_vehicles.dir/Object.cpp.obj: CMakeFiles/autonomous_vehicles.dir/includes_CXX.rsp
 CMakeFiles/autonomous_vehicles.dir/Object.cpp.obj: ../Object.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/autonomous_vehicles.dir/Object.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/autonomous_vehicles.dir/Object.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\autonomous_vehicles.dir\Object.cpp.obj -c C:\Work\autonomous-vehicles\opengl-env\Object.cpp
 
 CMakeFiles/autonomous_vehicles.dir/Object.cpp.i: cmake_force
@@ -109,7 +109,7 @@ CMakeFiles/autonomous_vehicles.dir/Object.cpp.obj.provides.build: CMakeFiles/aut
 CMakeFiles/autonomous_vehicles.dir/SquareObj.cpp.obj: CMakeFiles/autonomous_vehicles.dir/flags.make
 CMakeFiles/autonomous_vehicles.dir/SquareObj.cpp.obj: CMakeFiles/autonomous_vehicles.dir/includes_CXX.rsp
 CMakeFiles/autonomous_vehicles.dir/SquareObj.cpp.obj: ../SquareObj.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/autonomous_vehicles.dir/SquareObj.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/autonomous_vehicles.dir/SquareObj.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\autonomous_vehicles.dir\SquareObj.cpp.obj -c C:\Work\autonomous-vehicles\opengl-env\SquareObj.cpp
 
 CMakeFiles/autonomous_vehicles.dir/SquareObj.cpp.i: cmake_force
@@ -134,7 +134,7 @@ CMakeFiles/autonomous_vehicles.dir/SquareObj.cpp.obj.provides.build: CMakeFiles/
 CMakeFiles/autonomous_vehicles.dir/Scene.cpp.obj: CMakeFiles/autonomous_vehicles.dir/flags.make
 CMakeFiles/autonomous_vehicles.dir/Scene.cpp.obj: CMakeFiles/autonomous_vehicles.dir/includes_CXX.rsp
 CMakeFiles/autonomous_vehicles.dir/Scene.cpp.obj: ../Scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/autonomous_vehicles.dir/Scene.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/autonomous_vehicles.dir/Scene.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\autonomous_vehicles.dir\Scene.cpp.obj -c C:\Work\autonomous-vehicles\opengl-env\Scene.cpp
 
 CMakeFiles/autonomous_vehicles.dir/Scene.cpp.i: cmake_force
@@ -159,7 +159,7 @@ CMakeFiles/autonomous_vehicles.dir/Scene.cpp.obj.provides.build: CMakeFiles/auto
 CMakeFiles/autonomous_vehicles.dir/AIVehicle.cpp.obj: CMakeFiles/autonomous_vehicles.dir/flags.make
 CMakeFiles/autonomous_vehicles.dir/AIVehicle.cpp.obj: CMakeFiles/autonomous_vehicles.dir/includes_CXX.rsp
 CMakeFiles/autonomous_vehicles.dir/AIVehicle.cpp.obj: ../AIVehicle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/autonomous_vehicles.dir/AIVehicle.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/autonomous_vehicles.dir/AIVehicle.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\autonomous_vehicles.dir\AIVehicle.cpp.obj -c C:\Work\autonomous-vehicles\opengl-env\AIVehicle.cpp
 
 CMakeFiles/autonomous_vehicles.dir/AIVehicle.cpp.i: cmake_force
@@ -184,7 +184,7 @@ CMakeFiles/autonomous_vehicles.dir/AIVehicle.cpp.obj.provides.build: CMakeFiles/
 CMakeFiles/autonomous_vehicles.dir/SelfDrivingWorld.cpp.obj: CMakeFiles/autonomous_vehicles.dir/flags.make
 CMakeFiles/autonomous_vehicles.dir/SelfDrivingWorld.cpp.obj: CMakeFiles/autonomous_vehicles.dir/includes_CXX.rsp
 CMakeFiles/autonomous_vehicles.dir/SelfDrivingWorld.cpp.obj: ../SelfDrivingWorld.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/autonomous_vehicles.dir/SelfDrivingWorld.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/autonomous_vehicles.dir/SelfDrivingWorld.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\autonomous_vehicles.dir\SelfDrivingWorld.cpp.obj -c C:\Work\autonomous-vehicles\opengl-env\SelfDrivingWorld.cpp
 
 CMakeFiles/autonomous_vehicles.dir/SelfDrivingWorld.cpp.i: cmake_force
@@ -209,7 +209,7 @@ CMakeFiles/autonomous_vehicles.dir/SelfDrivingWorld.cpp.obj.provides.build: CMak
 CMakeFiles/autonomous_vehicles.dir/Main.cpp.obj: CMakeFiles/autonomous_vehicles.dir/flags.make
 CMakeFiles/autonomous_vehicles.dir/Main.cpp.obj: CMakeFiles/autonomous_vehicles.dir/includes_CXX.rsp
 CMakeFiles/autonomous_vehicles.dir/Main.cpp.obj: ../Main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/autonomous_vehicles.dir/Main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/autonomous_vehicles.dir/Main.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\autonomous_vehicles.dir\Main.cpp.obj -c C:\Work\autonomous-vehicles\opengl-env\Main.cpp
 
 CMakeFiles/autonomous_vehicles.dir/Main.cpp.i: cmake_force
@@ -234,7 +234,7 @@ CMakeFiles/autonomous_vehicles.dir/Main.cpp.obj.provides.build: CMakeFiles/auton
 CMakeFiles/autonomous_vehicles.dir/DNN_TCP.cpp.obj: CMakeFiles/autonomous_vehicles.dir/flags.make
 CMakeFiles/autonomous_vehicles.dir/DNN_TCP.cpp.obj: CMakeFiles/autonomous_vehicles.dir/includes_CXX.rsp
 CMakeFiles/autonomous_vehicles.dir/DNN_TCP.cpp.obj: ../DNN_TCP.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/autonomous_vehicles.dir/DNN_TCP.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/autonomous_vehicles.dir/DNN_TCP.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\autonomous_vehicles.dir\DNN_TCP.cpp.obj -c C:\Work\autonomous-vehicles\opengl-env\DNN_TCP.cpp
 
 CMakeFiles/autonomous_vehicles.dir/DNN_TCP.cpp.i: cmake_force
@@ -259,7 +259,7 @@ CMakeFiles/autonomous_vehicles.dir/DNN_TCP.cpp.obj.provides.build: CMakeFiles/au
 CMakeFiles/autonomous_vehicles.dir/DNN_MQ.cpp.obj: CMakeFiles/autonomous_vehicles.dir/flags.make
 CMakeFiles/autonomous_vehicles.dir/DNN_MQ.cpp.obj: CMakeFiles/autonomous_vehicles.dir/includes_CXX.rsp
 CMakeFiles/autonomous_vehicles.dir/DNN_MQ.cpp.obj: ../DNN_MQ.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/autonomous_vehicles.dir/DNN_MQ.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/autonomous_vehicles.dir/DNN_MQ.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\autonomous_vehicles.dir\DNN_MQ.cpp.obj -c C:\Work\autonomous-vehicles\opengl-env\DNN_MQ.cpp
 
 CMakeFiles/autonomous_vehicles.dir/DNN_MQ.cpp.i: cmake_force
@@ -311,7 +311,7 @@ autonomous_vehicles.exe: external/libGLEW_1130.a
 autonomous_vehicles.exe: CMakeFiles/autonomous_vehicles.dir/linklibs.rsp
 autonomous_vehicles.exe: CMakeFiles/autonomous_vehicles.dir/objects1.rsp
 autonomous_vehicles.exe: CMakeFiles/autonomous_vehicles.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable autonomous_vehicles.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable autonomous_vehicles.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\autonomous_vehicles.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -336,6 +336,6 @@ CMakeFiles/autonomous_vehicles.dir/clean:
 .PHONY : CMakeFiles/autonomous_vehicles.dir/clean
 
 CMakeFiles/autonomous_vehicles.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Work\autonomous-vehicles\opengl-env C:\Work\autonomous-vehicles\opengl-env C:\Work\autonomous-vehicles\opengl-env\build_win C:\Work\autonomous-vehicles\opengl-env\build_win C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles\autonomous_vehicles.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Work\autonomous-vehicles\opengl-env C:\Work\autonomous-vehicles\opengl-env C:\Work\autonomous-vehicles\opengl-env\win_build C:\Work\autonomous-vehicles\opengl-env\win_build C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles\autonomous_vehicles.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/autonomous_vehicles.dir/depend
 

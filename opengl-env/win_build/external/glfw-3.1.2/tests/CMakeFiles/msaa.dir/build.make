@@ -45,7 +45,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Work\autonomous-vehicles\opengl-env
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Work\autonomous-vehicles\opengl-env\build_win
+CMAKE_BINARY_DIR = C:\Work\autonomous-vehicles\opengl-env\win_build
 
 # Include any dependencies generated for this target.
 include external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/depend.make
@@ -59,16 +59,16 @@ include external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/flags.make
 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/msaa.c.obj: external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/flags.make
 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/msaa.c.obj: external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/includes_C.rsp
 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/msaa.c.obj: ../external/glfw-3.1.2/tests/msaa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/msaa.c.obj"
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\msaa.dir\msaa.c.obj   -c C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\tests\msaa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/msaa.c.obj"
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\msaa.dir\msaa.c.obj   -c C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\tests\msaa.c
 
 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/msaa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/msaa.dir/msaa.c.i"
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\tests\msaa.c > CMakeFiles\msaa.dir\msaa.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\tests\msaa.c > CMakeFiles\msaa.dir\msaa.c.i
 
 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/msaa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/msaa.dir/msaa.c.s"
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\tests\msaa.c -o CMakeFiles\msaa.dir\msaa.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\tests\msaa.c -o CMakeFiles\msaa.dir\msaa.c.s
 
 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/msaa.c.obj.requires:
 
@@ -84,16 +84,16 @@ external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/msaa.c.obj.provides.build: externa
 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.obj: external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/flags.make
 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.obj: external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/includes_C.rsp
 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.obj: ../external/glfw-3.1.2/deps/getopt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.obj"
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\msaa.dir\__\deps\getopt.c.obj   -c C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\deps\getopt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.obj"
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\msaa.dir\__\deps\getopt.c.obj   -c C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\deps\getopt.c
 
 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/msaa.dir/__/deps/getopt.c.i"
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\deps\getopt.c > CMakeFiles\msaa.dir\__\deps\getopt.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\deps\getopt.c > CMakeFiles\msaa.dir\__\deps\getopt.c.i
 
 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/msaa.dir/__/deps/getopt.c.s"
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\deps\getopt.c -o CMakeFiles\msaa.dir\__\deps\getopt.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\deps\getopt.c -o CMakeFiles\msaa.dir\__\deps\getopt.c.s
 
 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.obj.requires:
 
@@ -121,8 +121,8 @@ external/glfw-3.1.2/tests/msaa.exe: external/glfw-3.1.2/src/libglfw3.a
 external/glfw-3.1.2/tests/msaa.exe: external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/linklibs.rsp
 external/glfw-3.1.2/tests/msaa.exe: external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/objects1.rsp
 external/glfw-3.1.2/tests/msaa.exe: external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable msaa.exe"
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\msaa.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable msaa.exe"
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\msaa.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/build: external/glfw-3.1.2/tests/msaa.exe
@@ -135,10 +135,10 @@ external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/requires: external/glfw-3.1.2/test
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/requires
 
 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/clean:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests && $(CMAKE_COMMAND) -P CMakeFiles\msaa.dir\cmake_clean.cmake
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests && $(CMAKE_COMMAND) -P CMakeFiles\msaa.dir\cmake_clean.cmake
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/clean
 
 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Work\autonomous-vehicles\opengl-env C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\tests C:\Work\autonomous-vehicles\opengl-env\build_win C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests\CMakeFiles\msaa.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Work\autonomous-vehicles\opengl-env C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\tests C:\Work\autonomous-vehicles\opengl-env\win_build C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests\CMakeFiles\msaa.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/depend
 

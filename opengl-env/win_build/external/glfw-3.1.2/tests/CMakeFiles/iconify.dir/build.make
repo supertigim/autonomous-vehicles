@@ -45,7 +45,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Work\autonomous-vehicles\opengl-env
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Work\autonomous-vehicles\opengl-env\build_win
+CMAKE_BINARY_DIR = C:\Work\autonomous-vehicles\opengl-env\win_build
 
 # Include any dependencies generated for this target.
 include external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/depend.make
@@ -59,16 +59,16 @@ include external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/flags.make
 external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/iconify.c.obj: external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/flags.make
 external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/iconify.c.obj: external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/includes_C.rsp
 external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/iconify.c.obj: ../external/glfw-3.1.2/tests/iconify.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/iconify.c.obj"
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\iconify.dir\iconify.c.obj   -c C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\tests\iconify.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/iconify.c.obj"
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\iconify.dir\iconify.c.obj   -c C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\tests\iconify.c
 
 external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/iconify.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/iconify.dir/iconify.c.i"
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\tests\iconify.c > CMakeFiles\iconify.dir\iconify.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\tests\iconify.c > CMakeFiles\iconify.dir\iconify.c.i
 
 external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/iconify.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/iconify.dir/iconify.c.s"
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\tests\iconify.c -o CMakeFiles\iconify.dir\iconify.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\tests\iconify.c -o CMakeFiles\iconify.dir\iconify.c.s
 
 external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/iconify.c.obj.requires:
 
@@ -84,16 +84,16 @@ external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/iconify.c.obj.provides.build: e
 external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.obj: external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/flags.make
 external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.obj: external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/includes_C.rsp
 external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.obj: ../external/glfw-3.1.2/deps/getopt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.obj"
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\iconify.dir\__\deps\getopt.c.obj   -c C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\deps\getopt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.obj"
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\iconify.dir\__\deps\getopt.c.obj   -c C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\deps\getopt.c
 
 external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/iconify.dir/__/deps/getopt.c.i"
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\deps\getopt.c > CMakeFiles\iconify.dir\__\deps\getopt.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\deps\getopt.c > CMakeFiles\iconify.dir\__\deps\getopt.c.i
 
 external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/iconify.dir/__/deps/getopt.c.s"
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\deps\getopt.c -o CMakeFiles\iconify.dir\__\deps\getopt.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\deps\getopt.c -o CMakeFiles\iconify.dir\__\deps\getopt.c.s
 
 external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.obj.requires:
 
@@ -121,8 +121,8 @@ external/glfw-3.1.2/tests/iconify.exe: external/glfw-3.1.2/src/libglfw3.a
 external/glfw-3.1.2/tests/iconify.exe: external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/linklibs.rsp
 external/glfw-3.1.2/tests/iconify.exe: external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/objects1.rsp
 external/glfw-3.1.2/tests/iconify.exe: external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable iconify.exe"
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\iconify.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable iconify.exe"
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\iconify.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/build: external/glfw-3.1.2/tests/iconify.exe
@@ -135,10 +135,10 @@ external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/requires: external/glfw-3.1.2/t
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/requires
 
 external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/clean:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests && $(CMAKE_COMMAND) -P CMakeFiles\iconify.dir\cmake_clean.cmake
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests && $(CMAKE_COMMAND) -P CMakeFiles\iconify.dir\cmake_clean.cmake
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/clean
 
 external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Work\autonomous-vehicles\opengl-env C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\tests C:\Work\autonomous-vehicles\opengl-env\build_win C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests\CMakeFiles\iconify.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Work\autonomous-vehicles\opengl-env C:\Work\autonomous-vehicles\opengl-env\external\glfw-3.1.2\tests C:\Work\autonomous-vehicles\opengl-env\win_build C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests\CMakeFiles\iconify.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/depend
 

@@ -33,8 +33,8 @@ endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES
-    "C:/Work/autonomous-vehicles/opengl-env/build_win/external/glfw-3.1.2/src/glfw3Config.cmake"
-    "C:/Work/autonomous-vehicles/opengl-env/build_win/external/glfw-3.1.2/src/glfw3ConfigVersion.cmake"
+    "C:/Work/autonomous-vehicles/opengl-env/win_build/external/glfw-3.1.2/src/glfw3Config.cmake"
+    "C:/Work/autonomous-vehicles/opengl-env/win_build/external/glfw-3.1.2/src/glfw3ConfigVersion.cmake"
     )
 endif()
 
@@ -42,7 +42,7 @@ if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMP
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw/glfwTargets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw/glfwTargets.cmake"
-         "C:/Work/autonomous-vehicles/opengl-env/build_win/external/glfw-3.1.2/CMakeFiles/Export/lib/cmake/glfw/glfwTargets.cmake")
+         "C:/Work/autonomous-vehicles/opengl-env/win_build/external/glfw-3.1.2/CMakeFiles/Export/lib/cmake/glfw/glfwTargets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw/glfwTargets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -51,21 +51,21 @@ if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMP
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES "C:/Work/autonomous-vehicles/opengl-env/build_win/external/glfw-3.1.2/CMakeFiles/Export/lib/cmake/glfw/glfwTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES "C:/Work/autonomous-vehicles/opengl-env/win_build/external/glfw-3.1.2/CMakeFiles/Export/lib/cmake/glfw/glfwTargets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES "C:/Work/autonomous-vehicles/opengl-env/build_win/external/glfw-3.1.2/CMakeFiles/Export/lib/cmake/glfw/glfwTargets-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES "C:/Work/autonomous-vehicles/opengl-env/win_build/external/glfw-3.1.2/CMakeFiles/Export/lib/cmake/glfw/glfwTargets-noconfig.cmake")
   endif()
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Work/autonomous-vehicles/opengl-env/build_win/external/glfw-3.1.2/src/glfw3.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Work/autonomous-vehicles/opengl-env/win_build/external/glfw-3.1.2/src/glfw3.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Work/autonomous-vehicles/opengl-env/build_win/external/glfw-3.1.2/src/cmake_install.cmake")
-  include("C:/Work/autonomous-vehicles/opengl-env/build_win/external/glfw-3.1.2/examples/cmake_install.cmake")
-  include("C:/Work/autonomous-vehicles/opengl-env/build_win/external/glfw-3.1.2/tests/cmake_install.cmake")
+  include("C:/Work/autonomous-vehicles/opengl-env/win_build/external/glfw-3.1.2/src/cmake_install.cmake")
+  include("C:/Work/autonomous-vehicles/opengl-env/win_build/external/glfw-3.1.2/examples/cmake_install.cmake")
+  include("C:/Work/autonomous-vehicles/opengl-env/win_build/external/glfw-3.1.2/tests/cmake_install.cmake")
 
 endif()
 

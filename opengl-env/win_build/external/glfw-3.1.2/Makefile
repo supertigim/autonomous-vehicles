@@ -50,7 +50,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Work\autonomous-vehicles\opengl-env
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Work\autonomous-vehicles\opengl-env\build_win
+CMAKE_BINARY_DIR = C:\Work\autonomous-vehicles\opengl-env\win_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -125,14 +125,14 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(CMAKE_COMMAND) -E cmake_progress_start C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\CMakeFiles\progress.marks
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles 0
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\CMakeFiles\progress.marks
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/clean
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/clean
 .PHONY : clean
 
 # The main clean target
@@ -142,22 +142,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/preinstall
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/preinstall
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 external/glfw-3.1.2/CMakeFiles/uninstall.dir/rule:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/CMakeFiles/uninstall.dir/rule
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/CMakeFiles/uninstall.dir/rule
 .PHONY : external/glfw-3.1.2/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -167,7 +167,7 @@ uninstall: external/glfw-3.1.2/CMakeFiles/uninstall.dir/rule
 
 # fast build rule for target.
 uninstall/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\CMakeFiles\uninstall.dir\build.make external/glfw-3.1.2/CMakeFiles/uninstall.dir/build
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\CMakeFiles\uninstall.dir\build.make external/glfw-3.1.2/CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
 # Help Target
@@ -194,6 +194,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Work/autonomous-vehicles/opengl-env/AIVehicle.cpp" "C:/Work/autonomous-vehicles/opengl-env/build_win/CMakeFiles/autonomous_vehicles.dir/AIVehicle.cpp.obj"
-  "C:/Work/autonomous-vehicles/opengl-env/DNN_MQ.cpp" "C:/Work/autonomous-vehicles/opengl-env/build_win/CMakeFiles/autonomous_vehicles.dir/DNN_MQ.cpp.obj"
-  "C:/Work/autonomous-vehicles/opengl-env/DNN_TCP.cpp" "C:/Work/autonomous-vehicles/opengl-env/build_win/CMakeFiles/autonomous_vehicles.dir/DNN_TCP.cpp.obj"
-  "C:/Work/autonomous-vehicles/opengl-env/Main.cpp" "C:/Work/autonomous-vehicles/opengl-env/build_win/CMakeFiles/autonomous_vehicles.dir/Main.cpp.obj"
-  "C:/Work/autonomous-vehicles/opengl-env/Object.cpp" "C:/Work/autonomous-vehicles/opengl-env/build_win/CMakeFiles/autonomous_vehicles.dir/Object.cpp.obj"
-  "C:/Work/autonomous-vehicles/opengl-env/Scene.cpp" "C:/Work/autonomous-vehicles/opengl-env/build_win/CMakeFiles/autonomous_vehicles.dir/Scene.cpp.obj"
-  "C:/Work/autonomous-vehicles/opengl-env/SelfDrivingWorld.cpp" "C:/Work/autonomous-vehicles/opengl-env/build_win/CMakeFiles/autonomous_vehicles.dir/SelfDrivingWorld.cpp.obj"
-  "C:/Work/autonomous-vehicles/opengl-env/SquareObj.cpp" "C:/Work/autonomous-vehicles/opengl-env/build_win/CMakeFiles/autonomous_vehicles.dir/SquareObj.cpp.obj"
-  "C:/Work/autonomous-vehicles/opengl-env/shader.cpp" "C:/Work/autonomous-vehicles/opengl-env/build_win/CMakeFiles/autonomous_vehicles.dir/shader.cpp.obj"
+  "C:/Work/autonomous-vehicles/opengl-env/AIVehicle.cpp" "C:/Work/autonomous-vehicles/opengl-env/win_build/CMakeFiles/autonomous_vehicles.dir/AIVehicle.cpp.obj"
+  "C:/Work/autonomous-vehicles/opengl-env/DNN_MQ.cpp" "C:/Work/autonomous-vehicles/opengl-env/win_build/CMakeFiles/autonomous_vehicles.dir/DNN_MQ.cpp.obj"
+  "C:/Work/autonomous-vehicles/opengl-env/DNN_TCP.cpp" "C:/Work/autonomous-vehicles/opengl-env/win_build/CMakeFiles/autonomous_vehicles.dir/DNN_TCP.cpp.obj"
+  "C:/Work/autonomous-vehicles/opengl-env/Main.cpp" "C:/Work/autonomous-vehicles/opengl-env/win_build/CMakeFiles/autonomous_vehicles.dir/Main.cpp.obj"
+  "C:/Work/autonomous-vehicles/opengl-env/Object.cpp" "C:/Work/autonomous-vehicles/opengl-env/win_build/CMakeFiles/autonomous_vehicles.dir/Object.cpp.obj"
+  "C:/Work/autonomous-vehicles/opengl-env/Scene.cpp" "C:/Work/autonomous-vehicles/opengl-env/win_build/CMakeFiles/autonomous_vehicles.dir/Scene.cpp.obj"
+  "C:/Work/autonomous-vehicles/opengl-env/SelfDrivingWorld.cpp" "C:/Work/autonomous-vehicles/opengl-env/win_build/CMakeFiles/autonomous_vehicles.dir/SelfDrivingWorld.cpp.obj"
+  "C:/Work/autonomous-vehicles/opengl-env/SquareObj.cpp" "C:/Work/autonomous-vehicles/opengl-env/win_build/CMakeFiles/autonomous_vehicles.dir/SquareObj.cpp.obj"
+  "C:/Work/autonomous-vehicles/opengl-env/shader.cpp" "C:/Work/autonomous-vehicles/opengl-env/win_build/CMakeFiles/autonomous_vehicles.dir/shader.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -36,8 +36,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Work/autonomous-vehicles/opengl-env/build_win/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/DependInfo.cmake"
-  "C:/Work/autonomous-vehicles/opengl-env/build_win/external/CMakeFiles/GLEW_1130.dir/DependInfo.cmake"
+  "C:/Work/autonomous-vehicles/opengl-env/win_build/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "C:/Work/autonomous-vehicles/opengl-env/win_build/external/CMakeFiles/GLEW_1130.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

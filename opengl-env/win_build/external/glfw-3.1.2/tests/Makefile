@@ -50,7 +50,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = C:\Work\autonomous-vehicles\opengl-env
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Work\autonomous-vehicles\opengl-env\build_win
+CMAKE_BINARY_DIR = C:\Work\autonomous-vehicles\opengl-env\win_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -125,14 +125,14 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(CMAKE_COMMAND) -E cmake_progress_start C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles C:\Work\autonomous-vehicles\opengl-env\build_win\external\glfw-3.1.2\tests\CMakeFiles\progress.marks
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Work\autonomous-vehicles\opengl-env\build_win\CMakeFiles 0
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles C:\Work\autonomous-vehicles\opengl-env\win_build\external\glfw-3.1.2\tests\CMakeFiles\progress.marks
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Work\autonomous-vehicles\opengl-env\win_build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/clean
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -142,22 +142,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/preinstall
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/preinstall
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/rule:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/rule
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/rule
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/rule
 
 # Convenience name for target.
@@ -167,12 +167,12 @@ clipboard: external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/rule
 
 # fast build rule for target.
 clipboard/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\clipboard.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/build
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\clipboard.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/build
 .PHONY : clipboard/fast
 
 # Convenience name for target.
 external/glfw-3.1.2/tests/CMakeFiles/events.dir/rule:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/events.dir/rule
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/events.dir/rule
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/events.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ events: external/glfw-3.1.2/tests/CMakeFiles/events.dir/rule
 
 # fast build rule for target.
 events/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\events.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/events.dir/build
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\events.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/events.dir/build
 .PHONY : events/fast
 
 # Convenience name for target.
 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/rule:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/rule
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/rule
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/rule
 
 # Convenience name for target.
@@ -197,12 +197,12 @@ msaa: external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/rule
 
 # fast build rule for target.
 msaa/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\msaa.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/build
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\msaa.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/build
 .PHONY : msaa/fast
 
 # Convenience name for target.
 external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/rule:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/rule
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/rule
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/rule
 
 # Convenience name for target.
@@ -212,12 +212,12 @@ glfwinfo: external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/rule
 
 # fast build rule for target.
 glfwinfo/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\glfwinfo.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/build
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\glfwinfo.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/build
 .PHONY : glfwinfo/fast
 
 # Convenience name for target.
 external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/rule:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/rule
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/rule
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/rule
 
 # Convenience name for target.
@@ -227,12 +227,12 @@ gamma: external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/rule
 
 # fast build rule for target.
 gamma/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\gamma.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/build
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\gamma.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/build
 .PHONY : gamma/fast
 
 # Convenience name for target.
 external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/rule:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/rule
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/rule
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/rule
 
 # Convenience name for target.
@@ -242,12 +242,12 @@ iconify: external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/rule
 
 # fast build rule for target.
 iconify/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\iconify.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/build
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\iconify.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/build
 .PHONY : iconify/fast
 
 # Convenience name for target.
 external/glfw-3.1.2/tests/CMakeFiles/threads.dir/rule:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/threads.dir/rule
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/threads.dir/rule
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/threads.dir/rule
 
 # Convenience name for target.
@@ -257,12 +257,12 @@ threads: external/glfw-3.1.2/tests/CMakeFiles/threads.dir/rule
 
 # fast build rule for target.
 threads/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\threads.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/threads.dir/build
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\threads.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/threads.dir/build
 .PHONY : threads/fast
 
 # Convenience name for target.
 external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/rule:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/rule
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/rule
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/rule
 
 # Convenience name for target.
@@ -272,12 +272,12 @@ joysticks: external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/rule
 
 # fast build rule for target.
 joysticks/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\joysticks.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/build
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\joysticks.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/build
 .PHONY : joysticks/fast
 
 # Convenience name for target.
 external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/rule:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/rule
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/rule
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/rule
 
 # Convenience name for target.
@@ -287,12 +287,12 @@ reopen: external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/rule
 
 # fast build rule for target.
 reopen/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\reopen.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/build
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\reopen.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/build
 .PHONY : reopen/fast
 
 # Convenience name for target.
 external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/rule:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/rule
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/rule
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/rule
 
 # Convenience name for target.
@@ -302,12 +302,12 @@ monitors: external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/rule
 
 # fast build rule for target.
 monitors/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\monitors.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/build
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\monitors.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/build
 .PHONY : monitors/fast
 
 # Convenience name for target.
 external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/rule:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/rule
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/rule
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/rule
 
 # Convenience name for target.
@@ -317,12 +317,12 @@ cursor: external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/rule
 
 # fast build rule for target.
 cursor/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\cursor.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/build
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\cursor.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/build
 .PHONY : cursor/fast
 
 # Convenience name for target.
 external/glfw-3.1.2/tests/CMakeFiles/empty.dir/rule:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/empty.dir/rule
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/empty.dir/rule
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/empty.dir/rule
 
 # Convenience name for target.
@@ -332,12 +332,12 @@ empty: external/glfw-3.1.2/tests/CMakeFiles/empty.dir/rule
 
 # fast build rule for target.
 empty/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\empty.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/empty.dir/build
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\empty.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/empty.dir/build
 .PHONY : empty/fast
 
 # Convenience name for target.
 external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/rule:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/rule
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/rule
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/rule
 
 # Convenience name for target.
@@ -347,12 +347,12 @@ sharing: external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/rule
 
 # fast build rule for target.
 sharing/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\sharing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/build
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\sharing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/build
 .PHONY : sharing/fast
 
 # Convenience name for target.
 external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/rule:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/rule
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/rule
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/rule
 
 # Convenience name for target.
@@ -362,12 +362,12 @@ tearing: external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/rule
 
 # fast build rule for target.
 tearing/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\tearing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/build
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\tearing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/build
 .PHONY : tearing/fast
 
 # Convenience name for target.
 external/glfw-3.1.2/tests/CMakeFiles/title.dir/rule:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/title.dir/rule
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/title.dir/rule
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/title.dir/rule
 
 # Convenience name for target.
@@ -377,12 +377,12 @@ title: external/glfw-3.1.2/tests/CMakeFiles/title.dir/rule
 
 # fast build rule for target.
 title/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\title.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/title.dir/build
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\title.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/title.dir/build
 .PHONY : title/fast
 
 # Convenience name for target.
 external/glfw-3.1.2/tests/CMakeFiles/windows.dir/rule:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/windows.dir/rule
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f CMakeFiles\Makefile2 external/glfw-3.1.2/tests/CMakeFiles/windows.dir/rule
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/windows.dir/rule
 
 # Convenience name for target.
@@ -392,7 +392,7 @@ windows: external/glfw-3.1.2/tests/CMakeFiles/windows.dir/rule
 
 # fast build rule for target.
 windows/fast:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\windows.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/windows.dir/build
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\windows.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/windows.dir/build
 .PHONY : windows/fast
 
 __/deps/getopt.obj: __/deps/getopt.c.obj
@@ -401,14 +401,14 @@ __/deps/getopt.obj: __/deps/getopt.c.obj
 
 # target to build an object file
 __/deps/getopt.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\clipboard.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.obj
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\events.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/events.dir/__/deps/getopt.c.obj
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\msaa.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.obj
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\glfwinfo.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.obj
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\gamma.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/__/deps/getopt.c.obj
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\iconify.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.obj
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\monitors.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/__/deps/getopt.c.obj
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\tearing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/__/deps/getopt.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\clipboard.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\events.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/events.dir/__/deps/getopt.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\msaa.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\glfwinfo.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\gamma.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/__/deps/getopt.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\iconify.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\monitors.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/__/deps/getopt.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\tearing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/__/deps/getopt.c.obj
 .PHONY : __/deps/getopt.c.obj
 
 __/deps/getopt.i: __/deps/getopt.c.i
@@ -417,14 +417,14 @@ __/deps/getopt.i: __/deps/getopt.c.i
 
 # target to preprocess a source file
 __/deps/getopt.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\clipboard.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.i
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\events.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/events.dir/__/deps/getopt.c.i
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\msaa.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.i
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\glfwinfo.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.i
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\gamma.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/__/deps/getopt.c.i
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\iconify.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.i
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\monitors.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/__/deps/getopt.c.i
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\tearing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/__/deps/getopt.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\clipboard.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\events.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/events.dir/__/deps/getopt.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\msaa.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\glfwinfo.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\gamma.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/__/deps/getopt.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\iconify.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\monitors.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/__/deps/getopt.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\tearing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/__/deps/getopt.c.i
 .PHONY : __/deps/getopt.c.i
 
 __/deps/getopt.s: __/deps/getopt.c.s
@@ -433,14 +433,14 @@ __/deps/getopt.s: __/deps/getopt.c.s
 
 # target to generate assembly for a file
 __/deps/getopt.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\clipboard.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.s
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\events.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/events.dir/__/deps/getopt.c.s
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\msaa.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.s
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\glfwinfo.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.s
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\gamma.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/__/deps/getopt.c.s
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\iconify.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.s
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\monitors.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/__/deps/getopt.c.s
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\tearing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/__/deps/getopt.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\clipboard.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\events.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/events.dir/__/deps/getopt.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\msaa.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\glfwinfo.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\gamma.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/__/deps/getopt.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\iconify.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\monitors.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/__/deps/getopt.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\tearing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/__/deps/getopt.c.s
 .PHONY : __/deps/getopt.c.s
 
 __/deps/tinycthread.obj: __/deps/tinycthread.c.obj
@@ -449,8 +449,8 @@ __/deps/tinycthread.obj: __/deps/tinycthread.c.obj
 
 # target to build an object file
 __/deps/tinycthread.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\threads.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.obj
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\empty.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\threads.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\empty.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.obj
 .PHONY : __/deps/tinycthread.c.obj
 
 __/deps/tinycthread.i: __/deps/tinycthread.c.i
@@ -459,8 +459,8 @@ __/deps/tinycthread.i: __/deps/tinycthread.c.i
 
 # target to preprocess a source file
 __/deps/tinycthread.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\threads.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.i
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\empty.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\threads.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\empty.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.i
 .PHONY : __/deps/tinycthread.c.i
 
 __/deps/tinycthread.s: __/deps/tinycthread.c.s
@@ -469,8 +469,8 @@ __/deps/tinycthread.s: __/deps/tinycthread.c.s
 
 # target to generate assembly for a file
 __/deps/tinycthread.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\threads.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.s
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\empty.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\threads.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\empty.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.s
 .PHONY : __/deps/tinycthread.c.s
 
 clipboard.obj: clipboard.c.obj
@@ -479,7 +479,7 @@ clipboard.obj: clipboard.c.obj
 
 # target to build an object file
 clipboard.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\clipboard.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/clipboard.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\clipboard.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/clipboard.c.obj
 .PHONY : clipboard.c.obj
 
 clipboard.i: clipboard.c.i
@@ -488,7 +488,7 @@ clipboard.i: clipboard.c.i
 
 # target to preprocess a source file
 clipboard.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\clipboard.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/clipboard.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\clipboard.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/clipboard.c.i
 .PHONY : clipboard.c.i
 
 clipboard.s: clipboard.c.s
@@ -497,7 +497,7 @@ clipboard.s: clipboard.c.s
 
 # target to generate assembly for a file
 clipboard.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\clipboard.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/clipboard.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\clipboard.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/clipboard.c.s
 .PHONY : clipboard.c.s
 
 cursor.obj: cursor.c.obj
@@ -506,7 +506,7 @@ cursor.obj: cursor.c.obj
 
 # target to build an object file
 cursor.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\cursor.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/cursor.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\cursor.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/cursor.c.obj
 .PHONY : cursor.c.obj
 
 cursor.i: cursor.c.i
@@ -515,7 +515,7 @@ cursor.i: cursor.c.i
 
 # target to preprocess a source file
 cursor.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\cursor.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/cursor.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\cursor.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/cursor.c.i
 .PHONY : cursor.c.i
 
 cursor.s: cursor.c.s
@@ -524,7 +524,7 @@ cursor.s: cursor.c.s
 
 # target to generate assembly for a file
 cursor.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\cursor.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/cursor.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\cursor.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/cursor.c.s
 .PHONY : cursor.c.s
 
 empty.obj: empty.c.obj
@@ -533,7 +533,7 @@ empty.obj: empty.c.obj
 
 # target to build an object file
 empty.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\empty.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/empty.dir/empty.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\empty.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/empty.dir/empty.c.obj
 .PHONY : empty.c.obj
 
 empty.i: empty.c.i
@@ -542,7 +542,7 @@ empty.i: empty.c.i
 
 # target to preprocess a source file
 empty.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\empty.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/empty.dir/empty.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\empty.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/empty.dir/empty.c.i
 .PHONY : empty.c.i
 
 empty.s: empty.c.s
@@ -551,7 +551,7 @@ empty.s: empty.c.s
 
 # target to generate assembly for a file
 empty.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\empty.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/empty.dir/empty.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\empty.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/empty.dir/empty.c.s
 .PHONY : empty.c.s
 
 events.obj: events.c.obj
@@ -560,7 +560,7 @@ events.obj: events.c.obj
 
 # target to build an object file
 events.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\events.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/events.dir/events.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\events.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/events.dir/events.c.obj
 .PHONY : events.c.obj
 
 events.i: events.c.i
@@ -569,7 +569,7 @@ events.i: events.c.i
 
 # target to preprocess a source file
 events.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\events.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/events.dir/events.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\events.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/events.dir/events.c.i
 .PHONY : events.c.i
 
 events.s: events.c.s
@@ -578,7 +578,7 @@ events.s: events.c.s
 
 # target to generate assembly for a file
 events.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\events.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/events.dir/events.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\events.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/events.dir/events.c.s
 .PHONY : events.c.s
 
 gamma.obj: gamma.c.obj
@@ -587,7 +587,7 @@ gamma.obj: gamma.c.obj
 
 # target to build an object file
 gamma.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\gamma.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/gamma.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\gamma.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/gamma.c.obj
 .PHONY : gamma.c.obj
 
 gamma.i: gamma.c.i
@@ -596,7 +596,7 @@ gamma.i: gamma.c.i
 
 # target to preprocess a source file
 gamma.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\gamma.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/gamma.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\gamma.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/gamma.c.i
 .PHONY : gamma.c.i
 
 gamma.s: gamma.c.s
@@ -605,7 +605,7 @@ gamma.s: gamma.c.s
 
 # target to generate assembly for a file
 gamma.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\gamma.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/gamma.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\gamma.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/gamma.c.s
 .PHONY : gamma.c.s
 
 glfwinfo.obj: glfwinfo.c.obj
@@ -614,7 +614,7 @@ glfwinfo.obj: glfwinfo.c.obj
 
 # target to build an object file
 glfwinfo.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\glfwinfo.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\glfwinfo.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.obj
 .PHONY : glfwinfo.c.obj
 
 glfwinfo.i: glfwinfo.c.i
@@ -623,7 +623,7 @@ glfwinfo.i: glfwinfo.c.i
 
 # target to preprocess a source file
 glfwinfo.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\glfwinfo.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\glfwinfo.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.i
 .PHONY : glfwinfo.c.i
 
 glfwinfo.s: glfwinfo.c.s
@@ -632,7 +632,7 @@ glfwinfo.s: glfwinfo.c.s
 
 # target to generate assembly for a file
 glfwinfo.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\glfwinfo.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\glfwinfo.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.s
 .PHONY : glfwinfo.c.s
 
 iconify.obj: iconify.c.obj
@@ -641,7 +641,7 @@ iconify.obj: iconify.c.obj
 
 # target to build an object file
 iconify.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\iconify.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/iconify.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\iconify.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/iconify.c.obj
 .PHONY : iconify.c.obj
 
 iconify.i: iconify.c.i
@@ -650,7 +650,7 @@ iconify.i: iconify.c.i
 
 # target to preprocess a source file
 iconify.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\iconify.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/iconify.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\iconify.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/iconify.c.i
 .PHONY : iconify.c.i
 
 iconify.s: iconify.c.s
@@ -659,7 +659,7 @@ iconify.s: iconify.c.s
 
 # target to generate assembly for a file
 iconify.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\iconify.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/iconify.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\iconify.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/iconify.c.s
 .PHONY : iconify.c.s
 
 joysticks.obj: joysticks.c.obj
@@ -668,7 +668,7 @@ joysticks.obj: joysticks.c.obj
 
 # target to build an object file
 joysticks.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\joysticks.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/joysticks.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\joysticks.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/joysticks.c.obj
 .PHONY : joysticks.c.obj
 
 joysticks.i: joysticks.c.i
@@ -677,7 +677,7 @@ joysticks.i: joysticks.c.i
 
 # target to preprocess a source file
 joysticks.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\joysticks.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/joysticks.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\joysticks.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/joysticks.c.i
 .PHONY : joysticks.c.i
 
 joysticks.s: joysticks.c.s
@@ -686,7 +686,7 @@ joysticks.s: joysticks.c.s
 
 # target to generate assembly for a file
 joysticks.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\joysticks.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/joysticks.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\joysticks.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/joysticks.c.s
 .PHONY : joysticks.c.s
 
 monitors.obj: monitors.c.obj
@@ -695,7 +695,7 @@ monitors.obj: monitors.c.obj
 
 # target to build an object file
 monitors.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\monitors.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/monitors.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\monitors.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/monitors.c.obj
 .PHONY : monitors.c.obj
 
 monitors.i: monitors.c.i
@@ -704,7 +704,7 @@ monitors.i: monitors.c.i
 
 # target to preprocess a source file
 monitors.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\monitors.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/monitors.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\monitors.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/monitors.c.i
 .PHONY : monitors.c.i
 
 monitors.s: monitors.c.s
@@ -713,7 +713,7 @@ monitors.s: monitors.c.s
 
 # target to generate assembly for a file
 monitors.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\monitors.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/monitors.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\monitors.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/monitors.c.s
 .PHONY : monitors.c.s
 
 msaa.obj: msaa.c.obj
@@ -722,7 +722,7 @@ msaa.obj: msaa.c.obj
 
 # target to build an object file
 msaa.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\msaa.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/msaa.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\msaa.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/msaa.c.obj
 .PHONY : msaa.c.obj
 
 msaa.i: msaa.c.i
@@ -731,7 +731,7 @@ msaa.i: msaa.c.i
 
 # target to preprocess a source file
 msaa.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\msaa.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/msaa.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\msaa.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/msaa.c.i
 .PHONY : msaa.c.i
 
 msaa.s: msaa.c.s
@@ -740,7 +740,7 @@ msaa.s: msaa.c.s
 
 # target to generate assembly for a file
 msaa.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\msaa.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/msaa.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\msaa.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/msaa.c.s
 .PHONY : msaa.c.s
 
 reopen.obj: reopen.c.obj
@@ -749,7 +749,7 @@ reopen.obj: reopen.c.obj
 
 # target to build an object file
 reopen.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\reopen.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/reopen.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\reopen.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/reopen.c.obj
 .PHONY : reopen.c.obj
 
 reopen.i: reopen.c.i
@@ -758,7 +758,7 @@ reopen.i: reopen.c.i
 
 # target to preprocess a source file
 reopen.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\reopen.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/reopen.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\reopen.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/reopen.c.i
 .PHONY : reopen.c.i
 
 reopen.s: reopen.c.s
@@ -767,7 +767,7 @@ reopen.s: reopen.c.s
 
 # target to generate assembly for a file
 reopen.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\reopen.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/reopen.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\reopen.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/reopen.c.s
 .PHONY : reopen.c.s
 
 sharing.obj: sharing.c.obj
@@ -776,7 +776,7 @@ sharing.obj: sharing.c.obj
 
 # target to build an object file
 sharing.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\sharing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/sharing.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\sharing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/sharing.c.obj
 .PHONY : sharing.c.obj
 
 sharing.i: sharing.c.i
@@ -785,7 +785,7 @@ sharing.i: sharing.c.i
 
 # target to preprocess a source file
 sharing.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\sharing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/sharing.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\sharing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/sharing.c.i
 .PHONY : sharing.c.i
 
 sharing.s: sharing.c.s
@@ -794,7 +794,7 @@ sharing.s: sharing.c.s
 
 # target to generate assembly for a file
 sharing.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\sharing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/sharing.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\sharing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/sharing.c.s
 .PHONY : sharing.c.s
 
 tearing.obj: tearing.c.obj
@@ -803,7 +803,7 @@ tearing.obj: tearing.c.obj
 
 # target to build an object file
 tearing.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\tearing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/tearing.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\tearing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/tearing.c.obj
 .PHONY : tearing.c.obj
 
 tearing.i: tearing.c.i
@@ -812,7 +812,7 @@ tearing.i: tearing.c.i
 
 # target to preprocess a source file
 tearing.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\tearing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/tearing.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\tearing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/tearing.c.i
 .PHONY : tearing.c.i
 
 tearing.s: tearing.c.s
@@ -821,7 +821,7 @@ tearing.s: tearing.c.s
 
 # target to generate assembly for a file
 tearing.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\tearing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/tearing.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\tearing.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/tearing.c.s
 .PHONY : tearing.c.s
 
 threads.obj: threads.c.obj
@@ -830,7 +830,7 @@ threads.obj: threads.c.obj
 
 # target to build an object file
 threads.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\threads.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/threads.dir/threads.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\threads.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/threads.dir/threads.c.obj
 .PHONY : threads.c.obj
 
 threads.i: threads.c.i
@@ -839,7 +839,7 @@ threads.i: threads.c.i
 
 # target to preprocess a source file
 threads.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\threads.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/threads.dir/threads.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\threads.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/threads.dir/threads.c.i
 .PHONY : threads.c.i
 
 threads.s: threads.c.s
@@ -848,7 +848,7 @@ threads.s: threads.c.s
 
 # target to generate assembly for a file
 threads.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\threads.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/threads.dir/threads.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\threads.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/threads.dir/threads.c.s
 .PHONY : threads.c.s
 
 title.obj: title.c.obj
@@ -857,7 +857,7 @@ title.obj: title.c.obj
 
 # target to build an object file
 title.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\title.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/title.dir/title.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\title.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/title.dir/title.c.obj
 .PHONY : title.c.obj
 
 title.i: title.c.i
@@ -866,7 +866,7 @@ title.i: title.c.i
 
 # target to preprocess a source file
 title.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\title.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/title.dir/title.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\title.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/title.dir/title.c.i
 .PHONY : title.c.i
 
 title.s: title.c.s
@@ -875,7 +875,7 @@ title.s: title.c.s
 
 # target to generate assembly for a file
 title.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\title.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/title.dir/title.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\title.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/title.dir/title.c.s
 .PHONY : title.c.s
 
 windows.obj: windows.c.obj
@@ -884,7 +884,7 @@ windows.obj: windows.c.obj
 
 # target to build an object file
 windows.c.obj:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\windows.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/windows.dir/windows.c.obj
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\windows.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/windows.dir/windows.c.obj
 .PHONY : windows.c.obj
 
 windows.i: windows.c.i
@@ -893,7 +893,7 @@ windows.i: windows.c.i
 
 # target to preprocess a source file
 windows.c.i:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\windows.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/windows.dir/windows.c.i
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\windows.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/windows.dir/windows.c.i
 .PHONY : windows.c.i
 
 windows.s: windows.c.s
@@ -902,7 +902,7 @@ windows.s: windows.c.s
 
 # target to generate assembly for a file
 windows.c.s:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\windows.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/windows.dir/windows.c.s
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(MAKE) -f external\glfw-3.1.2\tests\CMakeFiles\windows.dir\build.make external/glfw-3.1.2/tests/CMakeFiles/windows.dir/windows.c.s
 .PHONY : windows.c.s
 
 # Help Target
@@ -998,6 +998,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Work\autonomous-vehicles\opengl-env\build_win && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Work\autonomous-vehicles\opengl-env\win_build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

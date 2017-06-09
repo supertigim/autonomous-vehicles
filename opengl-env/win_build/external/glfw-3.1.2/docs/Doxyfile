@@ -52,7 +52,7 @@ PROJECT_LOGO           =
 # If a relative path is entered, it will be relative to the location
 # where doxygen was started. If left blank the current directory will be used.
 
-OUTPUT_DIRECTORY       = C:/Work/autonomous-vehicles/opengl-env/build_win/external/glfw-3.1.2/docs
+OUTPUT_DIRECTORY       = C:/Work/autonomous-vehicles/opengl-env/win_build/external/glfw-3.1.2/docs
 
 # If the CREATE_SUBDIRS tag is set to YES, then doxygen will create
 # 4096 sub-directories (in 2 levels) under the output directory of each output
@@ -641,7 +641,7 @@ WARN_FORMAT            = "$file:$line: $text"
 # and error messages should be written. If left blank the output is written
 # to stderr.
 
-WARN_LOGFILE           = C:/Work/autonomous-vehicles/opengl-env/build_win/external/glfw-3.1.2/docs/warnings.txt
+WARN_LOGFILE           = C:/Work/autonomous-vehicles/opengl-env/win_build/external/glfw-3.1.2/docs/warnings.txt
 
 #---------------------------------------------------------------------------
 # configuration options related to the input files

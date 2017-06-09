@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Work/autonomous-vehicles/opengl-env/external/glew-1.13.0/src/glew.c" "C:/Work/autonomous-vehicles/opengl-env/build_win/external/CMakeFiles/GLEW_1130.dir/glew-1.13.0/src/glew.c.obj"
+  "C:/Work/autonomous-vehicles/opengl-env/external/glew-1.13.0/src/glew.c" "C:/Work/autonomous-vehicles/opengl-env/win_build/external/CMakeFiles/GLEW_1130.dir/glew-1.13.0/src/glew.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
