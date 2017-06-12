@@ -9,12 +9,17 @@ To communicate with an environment, I choose ZeroMQ which supports various proto
   
 ## Dependencies  
   
-- python 2.7  
+- python 2.7 (Python 3.0 on Windows, but not tested unfortunately~)  
 - numpy  
 - tensorflow  
 - keras  
 - zeromq  
-  
+
+In case of installation failure with "connection err:[SSL..." when you use **pip install** on Windows. This is very special case happening to my laptop. Just ignore if you do not experience.    
+
+	pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org  numpy
+
+
 ## How to use  
   
 **Message Queue Service**  
@@ -29,7 +34,8 @@ To communicate with an environment, I choose ZeroMQ which supports various proto
   
 	- config.py		: hyper parameters   
 	- agent.py		: agent class  
-	- a3c.py		: [A3C algorithm class](https://github.com/jaara/AI-blog/blob/master/CartPole-A3C.py) 
-	- mq-server.py	: server over Message Queue
-	- tcp-server.py	: server over TCP
+	- a3c.py		: [A3C algorithm class](https://github.com/jaara/AI-blog/blob/master/CartPole-A3C.py)  
+	- mq-server.py		: server over Message Queue  
+	- tcp-server.py		: server over TCP  
+  
 	
