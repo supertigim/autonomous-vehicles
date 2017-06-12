@@ -65,7 +65,9 @@ You can find an installation file from [CMake site](https://cmake.org/download/)
   
 You can easily build this with **win_build** directory that I made. However, you need to follow the instruction, **"Building on Windows"** in the [opengl tutorial site](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-1-opening-a-window/), if you want to change.   
   
+  	cd autonomous-vehicle 	: no directory name change!!! remove "-master" if you download the zip file 
 	cd win_build
+	cmake ..
 	make 
 	autonomous_vehicles.exe 10  
   
