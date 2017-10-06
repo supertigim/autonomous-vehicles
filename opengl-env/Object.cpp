@@ -25,7 +25,7 @@ void Object::genVertexBuffer() {
 	}
 }
 
-void Object::drawLineLoop(const GLint& MatrixID, const glm::mat4 vp) {
+void Object::render(const GLint& MatrixID, const glm::mat4 vp) {
 
 	glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &(vp*model_matrix_)[0][0]);
 	//glEnableVertexAttribArray(0); //TODO: not quite sure if this need to be called before all object drawing
@@ -43,7 +43,7 @@ void Object::drawLineLoop(const GLint& MatrixID, const glm::mat4 vp) {
 
 	glDrawArrays(GL_LINE_LOOP, 0, vertices.size());
 }
-
+/*
 void Object::drawLines(const GLint& MatrixID, const glm::mat4 vp) {
 
 	glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &(vp*model_matrix_)[0][0]);
@@ -62,7 +62,7 @@ void Object::drawLines(const GLint& MatrixID, const glm::mat4 vp) {
 
 	glDrawArrays(GL_LINES, 0, vertices.size() / 3);
 }
-
+*/
 void Object::rotateCenteredZAxis(const float& angle_degree) {
 	
 	model_matrix_ = glm::translate(center_) * glm::rotate(glm::mat4(), glm::radians(angle_degree), glm::vec3(0, 0, 1)) * glm::translate(-center_) * model_matrix_;

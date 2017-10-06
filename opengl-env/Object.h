@@ -24,12 +24,15 @@ public:
 		:model_matrix_(glm::mat4(1.0f))
 	{}
 
-	~Object();
+	virtual ~Object();
 	glm::vec3 getTransformed(const glm::vec3 v) const;
 	void genVertexBuffer();
 
-	void drawLineLoop(const GLint& MatrixID, const glm::mat4 vp);
-	void drawLines(const GLint& MatrixID, const glm::mat4 vp);
+	virtual void render(const GLint& MatrixID, const glm::mat4 vp);
+	virtual void update() {}
+	virtual void initialize() {}
+//	void drawLineLoop(const GLint& MatrixID, const glm::mat4 vp);
+//	void drawLines(const GLint& MatrixID, const glm::mat4 vp);
 
 	void rotateCenteredZAxis(const float& angle_degree);
 

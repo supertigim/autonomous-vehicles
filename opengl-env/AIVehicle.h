@@ -17,14 +17,8 @@ public:
 		ACT_LEFT = 1,
 		ACT_RIGHT = 2,
 		ACT_BRAKE = 3,
-		//ACT_STAY = 4,
 		ACT_MAX = 4
 	};
-
-	static float NETWORK_INPUT_NUM;
-	static float INPUT_FRAME_CNT;
-	static int  WIDTH, HEIGHT;
-	static bool USE_CNN;
 
 protected:
 	const int ID_;
@@ -41,8 +35,7 @@ protected:
 
 	int sensor_min, sensor_max, sensor_di;
 	vec_t distances_from_sensors_;
-	std::deque<std::unique_ptr<Object>> passed_pos_obj_list_;
-	glm::vec3 passed_pos_; 
+	
 	float car_length_;
 	float direction_degree_;
 
@@ -54,17 +47,23 @@ protected:
 	//std::shared_ptr<DNN_TCP> dnn_;
 	std::shared_ptr<DNN_MQ> dnn_;
 	int init_sucess_;
+
+	float NETWORK_INPUT_NUM;
+	float INPUT_FRAME_CNT;
+	int  WIDTH, HEIGHT;
+	bool USE_CNN;
 	
 public:
-	AIVehicle(int id, boost::asio::io_service& ios);
+	AIVehicle(const int& id, boost::asio::io_service& ios);
 	void initialize();
-	int ID() {return ID_;}
+	const int ID() {return ID_;}
 
-	void setDirection(float dir);
+	void setDirection(const float& dir);
 	float getDirection() { return direction_degree_;}
 	float getSpeed();
 
-	void drive();
+	//void drive();
+	void update();
 	void render(const GLint& MatrixID, const glm::mat4 vp);
 
 	void processInput(const int& action);
@@ -81,11 +80,10 @@ protected:
 	void updateStateVector();
 
 	bool isTerminated();
-	void createSkidMark(const int& nums);
 	void calculateReward(float& reward);
 	
 	void makeImage(vec_t& t);
-	bool validatePos(float x, float y);
+	bool validatePos(const float& x, const float& y);
 };
 
 // end of file

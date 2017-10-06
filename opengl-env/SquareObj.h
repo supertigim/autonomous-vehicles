@@ -15,7 +15,7 @@ public:
 	SquareObj() {}
 	SquareObj(const glm::vec3& center, const float& half_dx, const float& half_dy);
 
-	void update(const glm::vec3& center, const float& half_dx, const float& half_dy);
+	void initPos(const glm::vec3& center, const float& half_dx, const float& half_dy);
 	bool isInside(const glm::vec3& pt);
 protected:	
 	float x_min_, y_min_,x_max_,y_max_;

@@ -10,6 +10,8 @@ void SelfDrivingWorld::initialize(boost::asio::io_service& ios, int car_num) {
 	
 	Scene::init();
 
+	obj_list_.resize(OBJ_GR_MAX);
+
 	// Create number of AI cars 
 	createAIVehicles(car_num, ios);
 
@@ -33,13 +35,13 @@ void SelfDrivingWorld::initialize(boost::asio::io_service& ios, int car_num) {
 	//glm::mat4 Projection = glm::ortho(-1.0f,1.0f,-1.0f,1.0f,0.0f,100.0f); // In world coordinates
 }
 
-void SelfDrivingWorld::createAIVehicles(int nums, boost::asio::io_service& ios){
+void SelfDrivingWorld::createAIVehicles(const int& nums, boost::asio::io_service& ios){
 
 	for(int i = 0; i < nums; ++i){
 		//std::cout << "Car num: "<< (1 << i) << endl;
 		AIVehicle *car = new AIVehicle(1 << i, ios);		
 		car->initialize();
-		car_list_.push_back(std::move(std::unique_ptr<AIVehicle>(car)));
+		obj_list_[OBJ_GR_VEH].push_back(std::move(std::unique_ptr<AIVehicle>(car)));
 	}
 }
 
@@ -51,32 +53,32 @@ void SelfDrivingWorld::createScene_Road(){
 	// outer barrier
 	{
 		SquareObj* box = new SquareObj();
-		box->update(glm::vec3(world_center_x, world_center_y, 0.0f), world_radius, world_radius);
-		obj_list.push_back(std::move(std::unique_ptr<Object>(box)));
+		box->initPos(glm::vec3(world_center_x, world_center_y, 0.0f), world_radius, world_radius);
+		obj_list_[OBJ_GR_ENV].push_back(std::move(std::unique_ptr<Object>(box)));
 	}
 
 	{
 		SquareObj* box = new SquareObj();
-		box->update(glm::vec3(world_center_x - 0.47f, world_center_y + 0.50f, 0.0f), 0.3f, 0.3f);
-		obj_list.push_back(std::move(std::unique_ptr<Object>(box)));
+		box->initPos(glm::vec3(world_center_x - 0.47f, world_center_y + 0.50f, 0.0f), 0.3f, 0.3f);
+		obj_list_[OBJ_GR_ENV].push_back(std::move(std::unique_ptr<Object>(box)));
 	}
 
 	{
 		SquareObj* box = new SquareObj();
-		box->update(glm::vec3(world_center_x - 0.47f, world_center_y - 0.50f, 0.0f), 0.3f, 0.3f);
-		obj_list.push_back(std::move(std::unique_ptr<Object>(box)));
+		box->initPos(glm::vec3(world_center_x - 0.47f, world_center_y - 0.50f, 0.0f), 0.3f, 0.3f);
+		obj_list_[OBJ_GR_ENV].push_back(std::move(std::unique_ptr<Object>(box)));
 	}
 
 	{
 		SquareObj* box = new SquareObj();
-		box->update(glm::vec3(world_center_x + 0.47f, world_center_y + 0.50f, 0.0f), 0.3f, 0.3f);
-		obj_list.push_back(std::move(std::unique_ptr<Object>(box)));
+		box->initPos(glm::vec3(world_center_x + 0.47f, world_center_y + 0.50f, 0.0f), 0.3f, 0.3f);
+		obj_list_[OBJ_GR_ENV].push_back(std::move(std::unique_ptr<Object>(box)));
 	}
 
 	{
 		SquareObj* box = new SquareObj();
-		box->update(glm::vec3(world_center_x + 0.47f, world_center_y - 0.50f, 0.0f), 0.3f, 0.3f);
-		obj_list.push_back(std::move(std::unique_ptr<Object>(box)));
+		box->initPos(glm::vec3(world_center_x + 0.47f, world_center_y - 0.50f, 0.0f), 0.3f, 0.3f);
+		obj_list_[OBJ_GR_ENV].push_back(std::move(std::unique_ptr<Object>(box)));
 	}
 }
 
@@ -89,14 +91,14 @@ void SelfDrivingWorld::createScene_Basic(){
 	{
 		Object *temp = new Object;
 		temp->initCircle(glm::vec3(world_center_x, world_center_y, 0.0f), world_radius, 30);
-		obj_list.push_back(std::move(std::unique_ptr<Object>(temp)));
+		obj_list_[OBJ_GR_ENV].push_back(std::move(std::unique_ptr<Object>(temp)));
 	}
 
 	// inner barrier
 	{
 		Object *temp = new Object;
 		temp->initCircle(glm::vec3(0.5f, 0.5f, 0.0f), 0.75f, 20);
-		obj_list.push_back(std::move(std::unique_ptr<Object>(temp)));
+		obj_list_[OBJ_GR_ENV].push_back(std::move(std::unique_ptr<Object>(temp)));
 	}
 
 	// hurdles for training 
@@ -104,34 +106,34 @@ void SelfDrivingWorld::createScene_Basic(){
 		Object *temp = new Object;
 		//temp->initCircle(glm::vec3(0.98f, 0.0f, 0.0f), 0.05f, 6);
 		temp->initCircle(glm::vec3(-0.43, 0.0f, 0.0f), 0.05f, 6);
-		obj_list.push_back(std::move(std::unique_ptr<Object>(temp))); 
+		obj_list_[OBJ_GR_ENV].push_back(std::move(std::unique_ptr<Object>(temp)));
 	}
 	
 	{
 		Object *temp = new Object;
 		temp->initCircle(glm::vec3(1.65f, 0.5f, 0.0f), 0.05f, 6);
-		obj_list.push_back(std::move(std::unique_ptr<Object>(temp))); 
+		obj_list_[OBJ_GR_ENV].push_back(std::move(std::unique_ptr<Object>(temp)));
 	}
 
 	{
 		Object *temp = new Object;
 		//temp->initCircle(glm::vec3(0.98f, 1.0f, 0.0f), 0.05f, 6);
 		temp->initCircle(glm::vec3(1.0f, 1.1f, 0.0f), 0.05f, 6);
-		obj_list.push_back(std::move(std::unique_ptr<Object>(temp))); 
+		obj_list_[OBJ_GR_ENV].push_back(std::move(std::unique_ptr<Object>(temp)));
 	}
 	
 	{
 		Object *temp = new Object;
 		//temp->initCircle(glm::vec3(0.5f, 1.45f, 0.0f), 0.05f, 6);
 		temp->initCircle(glm::vec3(0.2f, 1.4f, 0.0f), 0.05f, 6);
-		obj_list.push_back(std::move(std::unique_ptr<Object>(temp))); 
+		obj_list_[OBJ_GR_ENV].push_back(std::move(std::unique_ptr<Object>(temp)));
 	}
 
 	{
 		Object *temp = new Object;
 		//temp->initCircle(glm::vec3(0.5f, 1.45f, 0.0f), 0.05f, 6);
 		temp->initCircle(glm::vec3(0.990f, -0.35f, 0.0f), 0.05f, 6);
-		obj_list.push_back(std::move(std::unique_ptr<Object>(temp))); 
+		obj_list_[OBJ_GR_ENV].push_back(std::move(std::unique_ptr<Object>(temp)));
 	}
 }
 
@@ -145,8 +147,8 @@ void SelfDrivingWorld::createScene_RandomObstacles(){
 	// outer barrier
 	{
 		SquareObj* box = new SquareObj();
-		box->update(glm::vec3(world_center_x, world_center_y, 0.0f), world_radius, world_radius);
-		obj_list.push_back(std::move(std::unique_ptr<Object>(box)));
+		box->initPos(glm::vec3(world_center_x, world_center_y, 0.0f), world_radius, world_radius);
+		obj_list_[OBJ_GR_ENV].push_back(std::move(std::unique_ptr<Object>(box)));
 
 	}
 
@@ -165,7 +167,7 @@ void SelfDrivingWorld::createScene_RandomObstacles(){
 
 		Object *temp = new Object;
 		temp->initCircle(glm::vec3(x, y, 0.0f), obstacle_radius, 6);
-		obj_list.push_back(std::move(std::unique_ptr<Object>(temp))); 
+		obj_list_[OBJ_GR_ENV].push_back(std::move(std::unique_ptr<Object>(temp))); 
 	}
 }
 
@@ -177,13 +179,10 @@ void SelfDrivingWorld::render(){
 	glUseProgram(programID);
 	glEnableVertexAttribArray(0);
 
-	for(int i = 0 ; i < car_list_.size() ; ++i){
-		car_list_[i]->render(MatrixID_, Projection_ * View_);
-	}
-
-	//for (auto itr : obj_list) // this doesn't work with unique ptr
-	for (int i = 0; i < obj_list.size(); i++){
-		obj_list[i]->drawLineLoop(MatrixID_, Projection_ * View_);
+	for(int i = 0 ; i < obj_list_.size() ; ++i){
+		for(int j = 0; j < obj_list_[i].size(); ++j){
+			obj_list_[i][j]->render(MatrixID_, Projection_ * View_);
+		}
 	}
 
 	glDisableVertexAttribArray(0);
@@ -218,14 +217,13 @@ bool SelfDrivingWorld::handleKeyInput(){
 		if(key_reset_flag == true) {
 			if(!is_training_){
 				if(getKeyPressed(GLFW_KEY_A) == true)	is_training_ = INT_MAX;
-				else									is_training_ = 1 << uniform_rand(0, (int)car_list_.size()-1);
-				std::cout << "Back ground training mode: " << is_training_ << endl;
+				else									is_training_ = 1 << uniform_rand(0, (int)obj_list_[OBJ_GR_VEH].size()-1);
+				std::cout << "Back ground training mode" << endl;
 			}
 			else {
 				is_training_ = 0;
 				std::cout << "Interactive rendering mode" << endl;
 			} 
-
 			key_reset_flag = false;
 		}
 	}
@@ -241,20 +239,10 @@ void SelfDrivingWorld::run() {
 	while(true)
 	{
 		if(!handleKeyInput()) break;
-
-		// 실행되는 순서를 변경하여 학습 효율을 높이려고 했으나, 효과는 잘 모르겠음 
-		std::vector<int> deck(car_list_.size());
-		for(int i = 0; i < deck.size(); ++i)
-			deck[i] = i;
-		std::random_shuffle(deck.begin(), deck.end());
-
-		for(int i = 0; i < deck.size(); ++i){
-			car_list_[i]->drive();
-		}
 		
-		//for(int i = 0 ; i < car_list_.size() ; ++i){
-		//	car_list_[i]->drive();
-		//}
+		for(int i = 0 ; i < obj_list_[OBJ_GR_VEH].size() ; ++i){
+			obj_list_[OBJ_GR_VEH][i]->update();
+		}
 		
 		render();
 	}

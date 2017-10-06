@@ -2,10 +2,10 @@
 
 SquareObj::SquareObj(const glm::vec3& center, const float& half_dx, const float& half_dy)
 {
-	update(center, half_dx, half_dy);
+	initPos(center, half_dx, half_dy);
 }
 
-void SquareObj::update(const glm::vec3& center, const float& half_dx, const float& half_dy)
+void SquareObj::initPos(const glm::vec3& center, const float& half_dx, const float& half_dy)
 {
 	center_ = center;
 

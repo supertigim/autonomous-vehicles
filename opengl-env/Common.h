@@ -48,9 +48,9 @@ uniform_rand(T min, T max) {
 }
 
 using Transition = std::tuple<vec_t,	// state (* input_frame_count_)
-							label_t,	// action
-							float,		// reward
-							vec_t,		// next state (* input_frame_count_) --> size() == 0 if terminated
-							float>;		// td
+              							label_t,	// action
+              							float,		// reward
+              							vec_t,		// next state (* input_frame_count_) --> size() == 0 if terminated
+              							float>;		// td
 
 // end of file

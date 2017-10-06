@@ -6,15 +6,9 @@
 #include "AIVehicle.h"
 #include "SelfDrivingWorld.h"
 
-float AIVehicle::NETWORK_INPUT_NUM;
-float AIVehicle::INPUT_FRAME_CNT;
-int AIVehicle::WIDTH;
-int AIVehicle::HEIGHT;
-bool AIVehicle::USE_CNN;
-
 const int INIT_TRY_CNT = 10;
 
-AIVehicle::AIVehicle(int id, boost::asio::io_service& ios) 
+AIVehicle::AIVehicle(const int& id, boost::asio::io_service& ios) 
 		: ID_(id), car_length_(0.03f), fric(0.01f), turn_coeff_(2.0f), accel_coeff_(0.0001f), brake_coeff_(0.0003f)
 		, sensing_radius(0.35), sensor_min(-170), sensor_max(180), sensor_di(10)
 {
@@ -72,14 +66,14 @@ void AIVehicle::updateStateVector(){
 		makeImage(t);
 	}
 	past_states_.push_back(t);
-	if (past_states_.size() > AIVehicle::INPUT_FRAME_CNT) {
+	if (past_states_.size() > INPUT_FRAME_CNT) {
 		past_states_.pop_front();
 	}
 }
 
 bool AIVehicle::getState(vec_t& t){
-	if (past_states_.size() < AIVehicle::INPUT_FRAME_CNT) { t.clear(); return false; }
-	for(int i = 0, count = 0; i < AIVehicle::INPUT_FRAME_CNT ; ++i, count += AIVehicle::NETWORK_INPUT_NUM)
+	if (past_states_.size() < INPUT_FRAME_CNT) { t.clear(); return false; }
+	for(int i = 0, count = 0; i < INPUT_FRAME_CNT ; ++i, count += NETWORK_INPUT_NUM)
 		std::copy(past_states_[i].begin(), past_states_[i].end(), t.begin() + count);	
 	return true;
 }
@@ -111,13 +105,13 @@ void AIVehicle::makeImage(vec_t& t){
 	//std::cout << endl << endl;
 }
 
-bool AIVehicle::validatePos(float x, float y){
+bool AIVehicle::validatePos(const float& x, const float& y){
 	SelfDrivingWorld& world = SelfDrivingWorld::get();
 	glm::vec3 newPos(x, y, 0.0f);
 
-	for (int o = 0; o < world.getCars().size(); ++o) {
+	for (int o = 0; o < world.getVehicles().size(); ++o) {
 		if(ID_ & 1 << o)	continue;
-		float dist = glm::distance(newPos, world.getCars()[o]->center_);
+		float dist = glm::distance(newPos, world.getVehicles()[o]->center_);
 		if(dist < sensing_radius) return false;
 	}
 	return true;
@@ -147,9 +141,8 @@ void AIVehicle::initialize() {
 			(std::abs(x - min_x) < 0.1f || std::abs(x - world_center_x) < 0.2f ||std::abs(x - max_x) < 0.1f )&& 
 			(std::abs(y - min_x) < 0.2f ||  std::abs(y - world_center_y) < 0.2f || std::abs(y - max_y) < 0.2f)
 		){
-			update(glm::vec3(x, y, 0.0f), car_length_, car_length_);
+			initPos(glm::vec3(x, y, 0.0f), car_length_, car_length_);
 			previous_pos_ = center_;
-			passed_pos_ = center_;
 
 			if( x > world_center_x) direction_degree_ = 180.0f;
 			else direction_degree_ = 0.0f;
@@ -166,14 +159,13 @@ void AIVehicle::initialize() {
 		--init_sucess_;
 	}
 
-	passed_pos_obj_list_.clear();
 	past_states_.clear();
 }
 
 /*
 	이동체 방향 셋팅 
 */
-void AIVehicle::setDirection(float dir){
+void AIVehicle::setDirection(const float& dir){
 
 	model_matrix_ = glm::mat4();
 	dir_ = glm::vec3(01.0f, 0.0f, 0.0f);
@@ -273,10 +265,6 @@ void AIVehicle::updateAll(label_t& action, float& reward, vec_t& t) {
 	} else {
 		getState(t);
 	}
-
-	// 같은 자리에 다시 가지 않도록 인위적인 장애물 설치하는 방법 고민... 잘 안되서 disable 
-	//const int skidmark_num = 5;
-	//createSkidMark(skidmark_num);
 }
 
 /*
@@ -299,36 +287,23 @@ void AIVehicle::updateSensor()
 		end_pt = model_matrix_ * end_pt;
 		const glm::vec3 r = center + glm::vec3(end_pt.x, end_pt.y, end_pt.z);
 
-		int flag = 0;	glm::vec3 col_pt;	float min_t = 1e8;
-	
-		for (int o = 0; o < world.getObjects().size(); o++) {
-			int flag_temp;	float t_temp;	glm::vec3 col_pt_temp;
+		int flag = 0;	
+		glm::vec3 col_pt;	
+		float min_t = 1e8;
 
-			world.getObjects()[o]->checkCollisionLoop(center, r, flag_temp, t_temp, col_pt_temp);
+		const std::vector<std::vector<std::unique_ptr<Object>>>& objs = world.getObjs();
 
-			if (flag_temp == 1 && t_temp < min_t) {
-				min_t = t_temp;	col_pt = col_pt_temp; flag = flag_temp;
-			}
-		}
-		
-		for (int o = 0; o < world.getCars().size(); ++o) {
-			if(ID_ & 1 << o)	continue;
-			int flag_temp;	float t_temp;	glm::vec3 col_pt_temp;
+		for(int i = 0 ; i < objs.size(); ++i) {
+			for(int j = 0; j < objs[i].size(); ++j) {
+				if(i == SelfDrivingWorld::OBJ_GR_VEH && ID_ & 1 << j)	continue;
 
-			world.getCars()[o]->checkCollisionLoop(center, r, flag_temp, t_temp, col_pt_temp);
-			
-			if (flag_temp == 1 && t_temp < min_t) {
-				min_t = t_temp;	col_pt = col_pt_temp; flag = flag_temp;
-			}
-		}
+				int flag_temp;	float t_temp;	glm::vec3 col_pt_temp;	
+				objs[i][j]->checkCollisionLoop(center, r, flag_temp, t_temp, col_pt_temp);
 
-		for (int o = 0; o < passed_pos_obj_list_.size(); o++) {
-			int flag_temp;	float t_temp;	glm::vec3 col_pt_temp;
-
-			passed_pos_obj_list_[o]->checkCollisionLoop(center, r, flag_temp, t_temp, col_pt_temp);
-
-			if (flag_temp == 1 && t_temp < min_t) {
-				min_t = t_temp;	col_pt = col_pt_temp; flag = flag_temp;
+				if (flag_temp == 1 && t_temp < min_t) {
+					min_t = t_temp;	col_pt = col_pt_temp; 
+					flag = flag_temp;
+				}
 			}
 		}
 		
@@ -355,31 +330,25 @@ void AIVehicle::updateSensor()
 	else							sensing_lines.showOff();
 }
 
-void AIVehicle::createSkidMark(const int& nums){
-	const float distance_from_vehicle = 2.9f;
-	if( glm::distance(passed_pos_, center_ ) > car_length_* distance_from_vehicle  && getSpeed() > 0){
-		Object *temp = new Object;
-		temp->initCircle(passed_pos_, 0.05f, 6);
-		passed_pos_obj_list_.push_back(std::move(std::unique_ptr<Object>(temp))); 
-		if( passed_pos_obj_list_.size() > nums) passed_pos_obj_list_.pop_front();
-		passed_pos_ = center_;
-	}
-}
-
 // 충돌 검사 
 bool AIVehicle::isTerminated(){
 	bool ret = false;
 	glm::vec3 col_line_center;
-	SelfDrivingWorld& world = SelfDrivingWorld::get();
 
-	ret = checkCollisionLoop(world.getObjects(), col_line_center); // 장애물이나 벽에 부딪힐 때...
-	ret |= checkCollisionLoop(passed_pos_obj_list_, col_line_center);// 스키드마크에 충돌
-	for(int i = 0; i < world.getCars().size(); ++i){
-		if(ID_ & 1 << i)	continue;
-		bool crash = checkCollisionLoop(*world.getCars()[i], col_line_center); // 다른 차와 충돌 체크 
-		if(crash) world.getCars()[i]->initialize();
-		ret |= crash;
+	const std::vector<std::vector<std::unique_ptr<Object>>>& objs = SelfDrivingWorld::get().getObjs();
+	for(int i = 0 ; i < objs.size(); ++i) {
+		for(int j = 0; j < objs[i].size(); ++j) {
+			if(i == SelfDrivingWorld::OBJ_GR_VEH) {
+				if(ID_ & 1 << j)	continue;
+				bool crash = checkCollisionLoop(*objs[i][j], col_line_center); // 다른 차와 충돌 체크 
+				if(crash) objs[i][j]->initialize();
+				ret |= crash;  
+			}else {
+				ret |= checkCollisionLoop(*objs[i][j], col_line_center); 		// object 충돌 체크 
+			}
+		}
 	}
+
 	ret |= (getSpeed() < -0.50f);	// to prevent go backward
 
 	return ret;
@@ -401,20 +370,18 @@ float AIVehicle::getSpeed(){
 void AIVehicle::processInput(const int& action){
 	switch (action)
 	{
-	//case AIVehicle::ACT_STAY: 
-	//	break; // do nothing
-	case AIVehicle::ACT_ACCEL:
+	case ACT_ACCEL:
 		accel(); 
 		break;
-	case AIVehicle::ACT_LEFT:
+	case ACT_LEFT:
 		turnLeft();
 		accel(0.00005f);
 		break;
-	case AIVehicle::ACT_RIGHT:
+	case ACT_RIGHT:
 		turnRight();
 		accel(0.00005f);
 		break;
-	case AIVehicle::ACT_BRAKE:
+	case ACT_BRAKE:
 		decel();
 		break;
 	default:
@@ -425,7 +392,8 @@ void AIVehicle::processInput(const int& action){
 /*
 	- SelfDrivingWorld Class에서 모든 이동체의 drive호출 하도록 구성
 */
-void AIVehicle::drive(){	
+void AIVehicle::update() {
+//void AIVehicle::drive(){	
 
 	if(init_sucess_ != INIT_TRY_CNT){
 		init_sucess_ = INIT_TRY_CNT;
@@ -433,7 +401,7 @@ void AIVehicle::drive(){
 		return;	
 	} 
 
-	std::unique_ptr<Transition> t_ptr = std::make_unique<Transition>(AIVehicle::NETWORK_INPUT_NUM * AIVehicle::INPUT_FRAME_CNT, 0, 0.0f, AIVehicle::NETWORK_INPUT_NUM * AIVehicle::INPUT_FRAME_CNT,100.0f);
+	std::unique_ptr<Transition> t_ptr = std::make_unique<Transition>(NETWORK_INPUT_NUM * INPUT_FRAME_CNT, 0, 0.0f, NETWORK_INPUT_NUM * INPUT_FRAME_CNT,100.0f);
 	vec_t& state 		= std::get<0>(*t_ptr);
 	label_t& action 	= std::get<1>(*t_ptr);
 	float& reward 		= std::get<2>(*t_ptr);
@@ -458,11 +426,8 @@ void AIVehicle::drive(){
 	이동체 렌더링 함수로 world class에서 호출
 */
 void AIVehicle::render(const GLint& MatrixID, const glm::mat4 vp){
-	drawLineLoop(MatrixID, vp);
-	sensing_lines.drawLineLoop(MatrixID, vp);
-	for(int i = 0 ; i <  passed_pos_obj_list_.size(); ++i ) {
-		passed_pos_obj_list_[i]->drawLineLoop(MatrixID, vp);
-	}
+	Object::render(MatrixID, vp);
+	sensing_lines.render(MatrixID, vp);
 }
 
 // end of file 

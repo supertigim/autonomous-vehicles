@@ -21,6 +21,8 @@ In case of installation failure with "connection err:[SSL..." when you use **pip
 
 
 ## How to use  
+	# in case of using anaconda
+	source activate tf
   
 **Message Queue Service**  
   
